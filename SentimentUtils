@@ -1,0 +1,36 @@
+package com.winterchen.utils;
+
+
+import com.baidu.aip.nlp.AipNlp;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.stereotype.Component;
+import java.util.HashMap;
+@Component
+public class SentimentUtils {
+    public static final String APP_ID = "14891035";
+    public static final String API_KEY = "UqmauSuaeFUfUISOQnYWDzfe";
+    public static final String SECRET_KEY = "GgQgpsjRlsrudje9NDo8OOfNyDtKGm8m";
+
+    public static String  sentimentJudge(String text) {
+        AipNlp client = new AipNlp(APP_ID, API_KEY, SECRET_KEY);
+        client.setConnectionTimeoutInMillis(2000);
+        client.setSocketTimeoutInMillis(60000);
+        HashMap<String, Object> options = new HashMap<String, Object>();
+        for(int i=0;i<100000000;i++);
+        JSONObject res = client.sentimentClassify(text, options);
+        String temp = res.toString(2);
+        JSONObject jsonObject= new JSONObject(temp);
+        System.out.println(jsonObject);
+        JSONArray records = (JSONArray) jsonObject.get("items");
+        JSONObject jsonObject1= new JSONObject(records.get(0).toString());
+        String result = jsonObject1.get("sentiment").toString();
+        if(result.equals("0")){
+            return "消极情绪";
+        }else if(result.equals("1"))
+            return "中立情绪";
+        else
+            return "积极情绪";
+
+    }
+}
