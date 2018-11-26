@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>兴全基金数据分析</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="colorlib-loader"></div>
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div id="colorlib-logo"><a href="http://www.xqfunds.com/">兴全基金</a></div>
+                    </div>
+                    <div class="col-md-10 text-right menu-1">
+                        <ul>
+                            <li class="active"><a href="">首页</a></li>
+                            <li class="has-dropdown">
+                                <a href="index1.html">信息监测</a>
+                                <ul class="dropdown">
+                                    <li><a href="haha">信息列表</a></li>
+                                    <li><a href="../template/index1.html">图表分析</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">简报报告</a></li>
+                            <li><a href="shop.html">相关分析</a></li>
+                            <li><a href="contact.html">关于我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="video-hero" style="height: 300px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+        <div class="overlay"></div>
+        <!--<a class="player" data-property="{videoURL:'',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>-->
+        <div class="display-t text-center">
+            <div class="display-tc">
+                <div class="container">
+                    <div class="col-md-12 col-md-offset-0">
+                        <div class="animate-box">
+                            <h2>兴全基金吧发帖数据分析展示</h2>
+                            <p><a href="gallery.html" class="btn btn-primary btn-lg btn-custom">Get start</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="colorlib-featured" >
+        <div class="row animate-box">
+            <div class="featured-wrap">
+                <div class="owl-carousel" >
+                    <div class="item">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="featured-entry">
+                                <div id="chart"></div>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="featured-entry">
+                                <div id="pie"></div>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="featured-entry">
+                                <div id="line"></div>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- YTPlayer -->
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<!-- Owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Counters -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+    <script type="text/javascript">
+
+        var myPie = echarts.init(document.getElementById('pie'));
+        myPie.showLoading({
+            text : "正在努力的读取数据中。。。。。",
+        })
+        var option = {
+            title : {
+                text : 'pie',
+                x : 'center',
+                subtext : ''
+            },
+            tooltip : {
+                trigger : 'item',
+                formatter : "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend : {
+                orient : 'vertical',
+                x : 'left',
+                data : [],
+            },
+            series: [{
+                name: '管理员角色',
+                type: 'pie',
+                radius: '70%',
+                center: ['60%', '60%'],
+                data: []
+            }]
+        };
+        myPie.setOption(option);
+
+        $.ajax({
+            type : "get",
+            async : false, //同步执行
+            url : "list",
+            dataType : "json", //返回数据形式为json
+            success : function(result) {
+                var data = result.data;
+                if(data){
+                    //初始化option.xAxis[0]中的data
+                    for(var i=0;i<data.length;i++){
+                        option.legend.data.push(data[i].sentiment);
+                    }
+                    //初始化option.series[0]中的data
+                    for(var i=0;i<data.length;i++){
+                        /*option.series[0].data['value'].push(result[i].integral_val);
+                            option.series[0].data['name'].push(result[i].name);*/
+                        option.series[0].data.push({'name':data[i].sentiment,'value':data[i].total});
+                    }
+                    myPie.hideLoading();    //隐藏加载动画
+                    myPie.setOption(option,true);
+                }
+            },
+            error: function(errorMsg) {
+                alert("图表请求数据失败啦!");
+                myPie.hideLoading();
+            }
+        })
+
+
+
+
+
+    </script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('line'));
+
+    // 指定图表的配置项和数据
+    myChart.setOption({
+        title: {
+            text: '兴全基金吧发帖人分析'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: []
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: []
+        }]
+    });
+
+    myChart.showLoading();
+
+    var clicks=[];    //类别数组（实际用来盛放X轴坐标值）
+    var authors=[];    //销量数组（实际用来盛放Y坐标值）
+
+    $.ajax({
+        type : "get",
+        async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+        url : "click",    //请求发送到TestServlet处
+        data : {},
+        dataType : "json",        //返回数据形式为json
+        success : function(result) {
+            //请求成功时执行该函数内容，result即为服务器返回的json对象
+            var data = result.data;
+            if (data) {
+                for(var i=0;i<data.length;i++){
+                    clicks.push(data[i].click);    //挨个取出类别并填入类别数组
+                }
+                for(var i=0;i<data.length;i++){
+                    authors.push(data[i].author);    //挨个取出销量并填入销量数组
+                }
+                myChart.hideLoading();    //隐藏加载动画
+                myChart.setOption({        //加载数据图表
+                    xAxis: {
+                        data: authors,
+                        "axisLabel":{
+                            interval: 0}
+                    },
+                    series: [{
+                        // 根据名字对应到相应的系列
+                        name: '销量',
+                        data: clicks
+                    }]
+                });
+
+            }
+
+        },
+        error : function() {
+            //请求失败时执行该函数
+            alert("图表请求数据失败!");
+            myChart.hideLoading();
+        }
+    })
+</script>
+    <script type="text/javascript">
+        $().ready(
+            function() {
+                var myChart = echarts.init(document.getElementById('chart'));
+                //图表显示提示信息
+                myChart.showLoading();
+                //定义图表options
+                var options = {
+                    xAxis: {
+                        type: 'category',
+                        data: []
+                    },
+                    yAxis: {
+                        type: 'value'
+                    },
+                    series: [{
+                        data: [],
+                        type: 'line'
+                    }]
+                };
+
+                var clicks=[];    //类别数组（实际用来盛放X轴坐标值）
+                var authors=[];
+
+                //通过Ajax获取数据
+                $.ajax({
+                    type : "get",
+                    async : false, //同步执行
+                    url : "click",
+                    dataType : "json", //返回数据形式为json
+
+                    success : function(result) {
+                        var data = result.data;
+                        console.log(data);
+                        if (data) {
+                            //将返回的category和series对象赋值给options对象内的category和series
+                            //因为xAxis是一个数组 这里需要是xAxis[i]的形式
+                            for(var i=0;i<data.length;i++){
+                                clicks.push(data[i].click);    //挨个取出类别并填入类别数组
+                            }
+                            for(var i=0;i<data.length;i++){
+                                authors.push(data[i].author);    //挨个取出销量并填入销量数组
+                                console.log(authors);
+                            }
+                            myChart.hideLoading();
+                            myChart.setOption({
+                                title: {
+                                    text: '网友点击量统计图'
+                                },
+                                tooltip: {
+                                    trigger: 'axis'
+                                },
+                                grid: {
+                                    left: '3%',
+                                    right: '4%',
+                                    bottom: '3%',
+                                    containLabel: true
+                                },
+                                toolbox: {
+                                    feature: {
+                                        saveAsImage: {}
+                                    }
+                                },
+                                xAxis: {
+                                    boundaryGap: false,
+                                    type: 'category',
+                                    data: authors,
+                                    "axisLabel":{
+                                        interval: 0}
+                                },
+                                yAxis: {
+                                    type: 'value'
+                                },
+                                series: [{
+                                    data: clicks,
+                                    type: 'line'
+                                }]
+                            });
+                            // myChart.setOption(options);
+                        }
+                    },
+                    error : function(errorMsg) {
+                        alert("图表请求数据失败啦!");
+                    }
+                });
+
+            });
+    </script>
+</body>
+</html>
+
